@@ -1,0 +1,435 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  position: relative;
+  margin: 0;
+}
+
+
+blockquote::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 18px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+  background-image: url(img/quote.svg);
+  background-size: contain;
+  opacity: 0.1;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 1.875rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+cite {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.page-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  background-color: #E6E6E6;
+}
+
+.portrait-wrap {
+  width: 160px;
+  height: 160px;
+  background-image: url(img/pic_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main-info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.main-info__text {
+  width: 100%;
+}
+
+.location {
+  font-weight: bold;
+}
+
+.lang {
+  font-weight: bold;
+}
+
+.skill {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.812rem;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.tags {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 23px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.tags li {
+  margin-right: 4px;
+  margin-bottom: 13px;
+}
+
+.skills-list {
+  padding-left: 15px;
+  margin-top: 22px;
+}
+
+.skills-item {
+  margin-bottom: 4px;
+  font-size: 0.875rem;
+}
+
+.tags li:last-child .skill {
+  background-color: #A2A2A2;
+}
+
+.tags li:nth-last-child(2) .skill {
+  background-color: #5C5C5C;
+}
+
+.print {
+  display: block;
+  padding: 4px 9px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.812rem;
+  border: none;
+  border-radius: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.page-main {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-right: 1px solid #E6E6E6;
+}
+
+.info-block {
+  width: 100%;
+  padding: 10px;
+  border-left: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.info-block__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-title {
+  padding: 0 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.xtra-skills {
+  margin-top: 5px;
+}
+
+.sample {
+  position: relative;
+  min-height: 244px;
+  padding: 0;
+  background-image: url(img/eHezH.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.sample .info-block__header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.sample .info-title {
+  padding-top: 19px;
+  margin-top: 0;
+  padding-bottom: 19px;
+}
+
+.blank {
+  min-height: 135px;
+}
+
+.preferences {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+
+.info-sub-block {
+  padding: 10px;
+}
+
+.availability-info {
+  font-size: 1.937rem;
+}
+
+.availability .info-block__header {
+  margin-bottom: 20px;
+}
+
+.availability {
+  min-height: 109px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.environment .info-title {
+  margin-top: 8px;
+  margin-bottom: 7px;
+}
+
+.environment p {
+  padding: 0 20px;
+  margin-top: 22px;
+}
+
+.experience-list {
+  padding-left: 12px;
+  margin-top: 38px;
+  font-size: 0.875rem;
+}
+
+.experience-item {
+  margin-bottom: 4px;
+}
+
+.quote {
+  padding: 20px 16px 0 16px;
+  margin-bottom: 15px;
+  font-size: 0.937rem;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quote-block {
+  position: relative;
+}
+
+.quote-block::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: 18px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(img/quote.svg);
+  background-size: contain;
+  opacity: 0.1;
+}
+
+.quote-author {
+  padding-right: 15px;
+  font-size: 0.687rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+@media (min-width: 425px) {
+
+  .page-header {
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .portrait-wrap {
+    width: 40%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .main-info {
+    width: 60%;
+    padding-left: 28px;
+    padding-left: 29px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 31px;
+  }
+
+  .name {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 650px) {
+
+  .main-info {
+    width: 75%;
+  }
+
+  .main-info__text {
+    width: 70%;
+    padding-right: 20px;
+  }
+
+  .portrait-wrap {
+    width: 25%;
+  }
+
+  .info-block {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .main-info {
+    width: 75%;
+  }
+
+  .main-info__text {
+    width: 70%;
+  }
+
+  .info-block {
+    min-height: 241px;
+  }
+
+  .portrait-wrap {
+    width: 25%;
+  }
+
+  .name {
+    padding-left: 6px;
+    padding-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .lang {
+    margin-top: 6px;
+  }
+
+  .location,
+  .lang,
+  .xtra-skills {
+    padding-left: 7px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .container {
+    width: 980px;
+  }
+
+  .page-header {
+    min-height: 238px;
+  }
+
+  .info-block {
+    width: 25%;
+  }
+}
